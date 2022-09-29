@@ -8,6 +8,7 @@ import java.util.List;
 
 public class Utils {
     public static List<String> readFile(File file) {
+        
         List<String> words = new ArrayList<>();
 
         try (BufferedReader buffer = new BufferedReader(new java.io.FileReader(file))) {
@@ -24,7 +25,7 @@ public class Utils {
     }
 
     public static void writeToFile(String text, String fileName) {
-
+        
         try (FileWriter writer = new FileWriter(new File(fileName))) {
 
             writer.write(text);
@@ -35,6 +36,7 @@ public class Utils {
     }
 
     public static List<String> splitTextToWords(List<String> text, String splitter) {
+        
         return text.stream()
                 .flatMap((p) -> Arrays.stream(p.split(splitter)))
                 .toList();
