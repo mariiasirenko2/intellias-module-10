@@ -1,7 +1,7 @@
 ## Результати роботи коду
 Task 1. Starter file: [987-123-4567, 123 456 7890, (123) 456-7890]<br>
-Filter phone numbers: [987-123-4567, (123) 456-7890]<br>
-Task 2. Starter file: [name age, alice 21, ryan 30]<br><br>
+Filter phone numbers: [987-123-4567, (123) 456-7890]<br><br>
+Task 2. Starter file: [name age, alice 21, ryan 30]<br>
 [
   {
     "name": "alice",
