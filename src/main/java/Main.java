@@ -38,12 +38,12 @@ public class Main {
     }
 
     public static List<String> getRealPhoneNumbers(List<String> phoneNumbers) {
+        
         Pattern pattern = Pattern.compile("(\\([0-9]{3}\\) [0-9]{3}-[0-9]{4})|([0-9]{3}-[0-9]{3}-[0-9]{4})");
         return phoneNumbers.stream().filter(pattern.asPredicate()).toList();
     }
 
     public static List<Map.Entry<String, Long>> getWordsFrequency(List<String> text) {
-
 
         Map<String, Long> wordsCounter = Utils.splitTextToWords(text, " ").stream()
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
